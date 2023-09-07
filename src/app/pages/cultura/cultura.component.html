@@ -1,0 +1,20 @@
+
+<!-- Llamar a barra de navegación de cultura -->
+<!-- Pintar la lista de componentes -->
+<div class="col" *ngFor="let cultura of listaCulturas">
+  <div *ngIf="nombre === cultura.nombre">
+    <p>La Cultura {{cultura.nombre}} se caracteriza por:</p>
+    {{cultura.descripcion}}
+    {{cultura.paisDeCultura}}
+
+
+  </div>
+</div>
+<button (click)="cambioPag()"  >Volver</button>
+
+
+
+
+
+
+
